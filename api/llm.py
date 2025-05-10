@@ -5,8 +5,6 @@ import pyimgur
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url="https://free.v36.cm/v1")
 
-# client.api_key = os.getenv("OPENAI_API_KEY")
-
 class ChatGPT:
     """
     A class for generating responses using OpenAI's GPT model.
