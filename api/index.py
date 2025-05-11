@@ -13,6 +13,8 @@ working_status = os.getenv("DEFALUT_TALKING", default="true").lower() == "true"
 
 app = Flask(__name__)
 chatgpt = ChatGPT()
+print("LINE_SECRET:", os.getenv("LINE_CHANNEL_SECRET"))
+print("LINE_TOKEN:", os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
 
 # domain root
 @app.route('/')
