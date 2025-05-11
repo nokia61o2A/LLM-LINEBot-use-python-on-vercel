@@ -108,4 +108,7 @@ def handle_image_message(event):
         TextSendMessage(text=f"助教:{reply_msg}"))
 
 if __name__ == "__main__":
-    app.run()
+    try:
+        app.run()
+    except Exception as e:
+        print("🔥 Server crashed with:", e)
